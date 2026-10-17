@@ -53,11 +53,6 @@ public class BinaryTree {
         printTreeRec(node.left, level + 1);
     }
 
-    // =========================================================
-    //  ПОИСК ВЕТВЕЙ С МАКСИМАЛЬНЫМ ЧИСЛОМ ВЕТВЛЕНИЙ
-    //  (без изменений)
-    // =========================================================
-
     public BranchInfo[] findBranchesWithMaxBranchings() {
         int totalNodes = countNodes(root);
         if (totalNodes == 0) {
