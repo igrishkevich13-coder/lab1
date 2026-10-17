@@ -5,7 +5,6 @@ public class BinaryTree {
         this.root = null;
     }
 
-    // Вставка как в BST — просто чтобы удобно было строить дерево
     public void insert(int value) {
         root = insertRec(root, value);
     }
