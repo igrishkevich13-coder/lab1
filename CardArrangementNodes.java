@@ -99,7 +99,7 @@ public class CardArrangementNodes {
     }
     
     public static void main(String[] args) {
-        int n = N; // число уже задано в константе
+        int n = N;
         
         System.out.println("Количество карточек: " + n);
         
