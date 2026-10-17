@@ -21,8 +21,6 @@ public class BinaryTree {
         return node;
     }
 
-    
-
     public void printTree() {
         if (root == null) {
             System.out.println("(дерево пустое)");
@@ -34,14 +32,12 @@ public class BinaryTree {
     private void printTreeRec(TreeNode node, int level) {
         if (node == null) return;
 
-        // Сначала правый ребёнок (он окажется выше)
         printTreeRec(node.right, level + 1);
 
-        // Отступ по уровню + сам узел
         for (int i = 0; i < level; i++) {
             System.out.print("    ");
         }
-        // Помечаем листья скобками — так виднее, где конец ветви
+        
         boolean isLeaf = (node.left == null && node.right == null);
         if (isLeaf) {
             System.out.println("[" + node.value + "]");
